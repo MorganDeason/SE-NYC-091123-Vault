@@ -1,6 +1,18 @@
 class Coffee:
     def __init__(self, name):
         self.name = name
+        
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        if isinstance(name, str) and (not hasattr(self, "name")):
+            self._name = name
+        else:
+            raise Exception("Setter Failed")
 
     def access_current_transactions(self, new_transaction=None):
         from classes.transaction import Transaction
