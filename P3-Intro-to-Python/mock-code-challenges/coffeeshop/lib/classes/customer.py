@@ -2,6 +2,7 @@ class Customer:
     def __init__(self, name):
         self.name = name
 
+<<<<<<< HEAD
     @property
     def name(self):
         return self._name
@@ -12,6 +13,10 @@ class Customer:
             self._name = name
         else:
             raise Exception("Setter failed")
+=======
+    def __repr__(self):
+        return f"Customer: {self.name}"
+>>>>>>> e25e96462cffb20cb701d7ad2833f6b00db33b3f
 
     def access_current_transactions(self, new_transaction=None):
         from classes.transaction import Transaction

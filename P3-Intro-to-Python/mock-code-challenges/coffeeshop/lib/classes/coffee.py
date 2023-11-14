@@ -14,6 +14,9 @@ class Coffee:
         else:
             raise Exception("Setter Failed")
 
+    def __repr__(self):
+        return f"Coffee: {self.name}"
+
     def access_current_transactions(self, new_transaction=None):
         from classes.transaction import Transaction
         pass

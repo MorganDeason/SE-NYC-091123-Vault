@@ -4,6 +4,9 @@ class Coffee:
         self.customers = []
         self.transactions = []
 
+    def __repr__(self):
+        return f"Coffee: {self.name}"
+
     @property
     def name(self):
         return self._name
@@ -32,7 +35,7 @@ class Coffee:
         if CUSTOMER_IS_UNIQUE and CUSTOMER_TYPE_IS_VALID:
             self.customers.append(new_customer)
         return self.customers
-
+    
     def calculate_total_number_of_transactions(self):
         return len(self.transactions)
     

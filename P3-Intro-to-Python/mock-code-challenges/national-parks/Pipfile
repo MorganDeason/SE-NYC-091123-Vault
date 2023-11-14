@@ -4,14 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-<<<<<<< HEAD
-ipdb = "*"
-pytest="*"
-=======
 importlib-resources = "5.10.0"
 ipdb = "0.13.9"
 pytest="7.1.3"
->>>>>>> e25e96462cffb20cb701d7ad2833f6b00db33b3f
 
 [requires]
 python_full_version = "3.8.13"

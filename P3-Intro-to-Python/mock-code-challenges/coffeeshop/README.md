@@ -130,7 +130,7 @@ build out any helper methods if needed.
   @price.setter
   def price(self, price)
   ```
-    - Price must be at least 1 and no greater than 10
+    - Price must be at least 1 and no greater than 50
     - `raise Exception` if setter fails
 - 
   ```python
@@ -204,13 +204,13 @@ build out any helper methods if needed.
 
 #### Customer
 
-
 -
   ```python
   def place_order(name_of_coffee, price)
   ```
   - Given the name of a coffee (as a string) and a price (as an integer), creates a new transaction and associates it with that customer and coffee
     - _hint: Remember to import both objects!_
+  - Returns the new transaction as an object instance
 - 
   ```python
   def calculate_total_money_spent()
