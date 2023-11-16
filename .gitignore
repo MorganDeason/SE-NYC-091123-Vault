@@ -30,3 +30,13 @@ package-lock.json
 */package-lock.json
 node_modules/
 */node_modules/
+
+# SQL Database Files
+*.db
+*/*.db
+
+# SQL Database Configuration Materials
+migrations/
+*/migrations/
+instance/
+*/instance/
