@@ -40,3 +40,15 @@ migrations/
 */migrations/
 instance/
 */instance/
+
+# Starter Code Directories
+starter/
+*/starter/
+
+# Environment Variables
+.env
+*/.env
+
+# Flask-Dependent Environment Variables
+.flaskenv
+*/.flaskenv
